@@ -1,0 +1,11 @@
+INSERT INTO th_data (timestamp, temperature, temperature_category, humidity, humidity_category) VALUES ('2023-08-17 05:51:21', 37.03429412841797, 'hot', 21.273773193359375, 'dry');
+INSERT INTO th_data (timestamp, temperature, temperature_category, humidity, humidity_category) VALUES ('2023-08-17 05:51:36', 37.01548767089844, 'hot', 21.353614807128906, 'dry');
+INSERT INTO th_data (timestamp, temperature, temperature_category, humidity, humidity_category) VALUES ('2023-08-17 07:52:55', 38.16261291503906, 'hot', 22.35446548461914, 'dry');
+INSERT INTO th_data (timestamp, temperature, temperature_category, humidity, humidity_category) VALUES ('2023-08-17 07:53:11', 38.20022201538086, 'hot', 22.844911575317383, 'dry');
+INSERT INTO th_data (timestamp, temperature, temperature_category, humidity, humidity_category) VALUES ('2023-08-17 07:53:26', 38.14380645751953, 'hot', 22.739410400390625, 'dry');
+INSERT INTO th_data (timestamp, temperature, temperature_category, humidity, humidity_category) VALUES ('2023-08-17 07:53:42', 38.25663757324219, 'hot', 22.670974731445312, 'dry');
+INSERT INTO th_data (timestamp, temperature, temperature_category, humidity, humidity_category) VALUES ('2023-08-18 13:37:08', 23.25, 'comfortable', 51.97796630859375, 'comfortable');
+INSERT INTO th_data (timestamp, temperature, temperature_category, humidity, humidity_category) VALUES ('2023-08-18 13:37:39', 23.908185958862305, 'comfortable', 51.37061309814453, 'comfortable');
+INSERT INTO th_data (timestamp, temperature, temperature_category, humidity, humidity_category) VALUES ('2023-08-18 13:40:15', 26.334070205688477, 'hot', 46.20952606201172, 'comfortable');
+INSERT INTO th_data (timestamp, temperature, temperature_category, humidity, humidity_category) VALUES ('2023-08-18 15:07:23', 38.18141555786133, 'hot', 25.2714786529541, 'dry');
+INSERT INTO th_data (timestamp, temperature, temperature_category, humidity, humidity_category) VALUES ('2023-08-19 04:30:10', 37.18473434448242, 'hot', 26.15827178955078, 'dry');
