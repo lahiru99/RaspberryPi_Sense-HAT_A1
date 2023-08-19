@@ -27,28 +27,29 @@ raspi_logo = [
     ]
     
 
-plus = [
-    O, O, O, O, O, O, O, O, 
-    O, O, O, W, W, O, O, O,
-    O, O, O, W, W, O, O, O, 
-    O, W, W, W, W, W, W, O,
-    O, W, W, W, W, W, W, O,
-    O, O, O, W, W, O, O, O,
-    O, O, O, W, W, O, O, O,
-    O, O, O, O, O, O, O, O,
-    ]
-    
+sad_face = [
+   y, y, y, y, y, y, y, y,
+   y, y, y, y, y, y, y, y,
+   y, b, b, y, y, b, b, y,
+   y, b, b, y, y, b, b, y,
+   y, y, y, y, y, y, y, y,
+   y, y, y, b, b, y, y, y,
+   y, b, b, y, y, b, b, y,
+   y, y, y, y, y, y, y, y
+]
 
-equals = [
-    O, O, O, O, O, O, O, O, 
-    O, W, W, W, W, W, W, O,
-    O, W, W, W, W, W, W, O,
-    O, O, O, O, O, O, O, O,
-    O, O, O, O, O, O, O, O,
-    O, W, W, W, W, W, W, O,
-    O, W, W, W, W, W, W, O,
-    O, O, O, O, O, O, O, O,
-    ]
+
+circle = [
+    O, O, G, G, G, G, O, O,
+    O, G, O, O, O, O, G, O,
+    G, O, O, O, O, O, O, G,
+    G, O, O, O, O, O, O, G,
+    G, O, O, O, O, O, O, G,
+    G, O, O, O, O, O, O, G,
+    O, G, O, O, O, O, G, O,
+    O, O, G, G, G, G, O, O,
+]
+
     
 
 heart = [
@@ -76,7 +77,7 @@ smiley_face = [
     
 
 def main():
-    emojis = [raspi_logo, plus, equals, heart, smiley_face]
+    emojis = [raspi_logo,sad_face,circle, heart, smiley_face]
     for emoji in emojis:
         sense.set_pixels(emoji)
         time.sleep(2)
