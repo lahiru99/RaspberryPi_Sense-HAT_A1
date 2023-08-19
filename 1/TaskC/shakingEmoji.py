@@ -1,23 +1,8 @@
 from sense_hat import SenseHat
 import time
+from animatedEmoji import raspi_logo, sad_face, circle, heart, smiley_face
 
 sense = SenseHat()
-
-# colors
-O = (0,0,0) #nothing
-P =  (255, 0, 0) #red
-
-emoji_1 = [
-    O, O, O, O, O, O, O, O,
-    O, P, P, O, P, P, O, O,
-    P, P, P, P, P, P, P, O,
-    P, P, P, P, P, P, P, O,
-    O, P, P, P, P, P, O, O,
-    O, O, P, P, P, O, O, O,
-    O, O, O, P, O, O, O, O,
-    O, O, O, O, O, O, O, O,
-    ]
-
 
 def detect_shake():
     acceleration = sense.get_accelerometer_raw()
@@ -31,12 +16,15 @@ def detect_shake():
     return False
 
 def main():
+    emojis = [raspi_logo, sad_face, circle, heart, smiley_face]
+    current_emoji_index = 0
+    
     while True:
         if detect_shake():
-            sense.set_pixels(emoji_1)
-            time.sleep(2)
-            sense.clear()
-        time.sleep(0.1)
+            sense.set_pixels(emojis[current_emoji_index])
+            current_emoji_index = (current_emoji_index + 1) % len(emojis)
+            time.sleep(0.5)
+
 
 if __name__ == "__main__":
     main()
